@@ -20,3 +20,9 @@ VCR.configure do |c|
 end
 
 require 'tyt'
+
+def setup_season
+  @pass = 'MBJ6445733' #That is actually my pass.  See how rad I am.  Do it.
+  @default_season = Tyt::Bachelor::DEFAULT_SEASON
+  @tyt = Tyt::Bachelor.new(pass: @pass)
+end

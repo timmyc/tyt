@@ -3,9 +3,7 @@ require "minitest/autorun"
 
 class TestBachelor < Minitest::Test
   def setup
-    @pass = 'MBJ6445733' #That is actually my pass.  See how rad I am.  Do it.
-    @default_season = Tyt::Bachelor::DEFAULT_SEASON
-    @tyt = Tyt::Bachelor.new(pass: @pass)
+    setup_season
   end
 
   def test_that_pass_is_required
@@ -45,6 +43,25 @@ class TestBachelor < Minitest::Test
     VCR.use_cassette('12_13_season_page') do
       @tyt.get_doc
       assert @tyt.doc.instance_of?(Nokogiri::HTML::Document) == true
+    end
+  end
+
+  def test_that_get_season_returns_season
+    @tyt.season = '12-13'
+    VCR.use_cassette('12_13_season_page') do
+      season_data = @tyt.season_data
+      assert season_data.instance_of?(Tyt::Season)
+    end
+  end
+
+  def test_that_get_season_day_sets_right_data
+    @tyt.season = '12-13'
+    VCR.use_cassette('12_13_season_page') do
+      season_data = @tyt.season_data
+      opening_day = season_data.days.first
+      assert opening_day.runs == 4, "runs expected 4 got #{opening_day.runs}"
+      assert opening_day.vertical_feet == 1028, "vertical_feet expected 1028 got #{opening_day.vertical_feet}"
+      assert opening_day.vertical_meters == 312, "vertical_meters expected 312 got #{opening_day.vertical_meters}"
     end
   end
 end

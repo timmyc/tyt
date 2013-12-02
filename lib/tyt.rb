@@ -1,4 +1,6 @@
 module Tyt
+  require 'hashie'
+  require 'date'
 
   # :stopdoc:
   LIBPATH = ::File.expand_path('..', __FILE__) + ::File::SEPARATOR

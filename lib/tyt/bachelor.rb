@@ -23,14 +23,17 @@ module Tyt
       @currentday = nil
       get_doc
       date_rows = doc.css('a[href]').select{|e| e['href'] =~ /currentday\=\d{2}\/\d{2}\/\d{4}/ }.collect{|a| a.parent().parent() }
-      season = []
+      season = Tyt::Season.new
       date_rows.each do |row|
         cells = row.children.css('td')
-        date = cells[0] ? Date.parse(cells[0].text) : nil
+        date = cells[0] ? Date.strptime(cells[0].text, '%m/%d/%Y') : nil
         runs = cells[1] ? cells[1].text : nil
         vertical_feet = cells[2] ? cells[2].text : nil
         vertical_meters = cells[3] ? cells[3].text : nil
+        ski_day = Tyt::SkiDay.new(date: date, runs: runs, vertical_feet: vertical_feet, vertical_meters: vertical_meters)
+        season.days << ski_day
       end
+      return season
     end
 
     def data_endpoint
