@@ -26,7 +26,6 @@ Gem::Specification.new do |s|
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
-    "VERSION",
     "lib/tyt.rb",
     "lib/tyt/bachelor.rb",
     "lib/tyt/run_detail.rb",
