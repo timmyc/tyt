@@ -6,12 +6,12 @@
 
 Gem::Specification.new do |s|
   s.name = "tyt"
-  s.version = ""
+  s.version = "0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Timmy Crawford"]
   s.date = "2013-12-03"
-  s.description = "TODO: longer description of your gem"
+  s.description = "Track Your Turns - A wrapper for ski area vertical tracking datasets."
   s.email = "timmydcrawford@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -45,7 +45,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "2.1.11"
-  s.summary = "TODO: one-line summary of your gem"
+  s.summary = "A little wrapper to access ski area turn tracking data."
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
