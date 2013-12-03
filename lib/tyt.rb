@@ -1,4 +1,5 @@
 module Tyt
+  VERSION '0.1'
   require 'hashie'
   require 'date'
 
