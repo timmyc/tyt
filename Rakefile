@@ -36,7 +36,8 @@ task :default => :test
 
 require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
-  version = '0.1'
+  require 'tyt/version'
+  version = Tyt::Version
 
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title = "tyt #{version}"
