@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://track.mtbachelor.com/mobile/tyt.asp?currentday=04/14/2013&passmediacode=MBJ6445733&season=12-13
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Date:
+      - Tue, 03 Dec 2013 02:32:33 GMT
+      Server:
+      - Microsoft-IIS/6.0
+      X-Powered-By:
+      - ASP.NET
+      Content-Length:
+      - '1067'
+      Content-Type:
+      - text/html
+      Set-Cookie:
+      - ASPSESSIONIDAATQQBSA=MAJPDIFCPECAECDFHLIMBBEP; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: UTF-8
+      string: "\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\"
+        >\r\n\r\n\r\n<html>\r\n<head>\r\n\r\n\t<title>MTB TYT Mobile</title>\r\n  \t<link
+        rel=\"stylesheet\" href=\"main.css\" >\r\n\r\n</head>\r\n\r\n\r\n<script type=\"text/javascript\">\r\nvar
+        gaJsHost = ((\"https:\" == document.location.protocol) ? \"https://ssl.\"
+        : \"http://www.\");\r\ndocument.write(unescape(\"%3Cscript src='\" + gaJsHost
+        + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\"));\r\n</script>\r\n<script
+        type=\"text/javascript\">\r\ntry {\r\nvar pageTracker = _gat._getTracker(\"UA-3857258-2\");\r\npageTracker._trackPageview();\r\n}
+        catch(err) {}</script>\r\n\r\n<body topmargin=\"0\" leftmargin=\"0\" marginwidth=\"0\"
+        marginheight=\"0\">\r\n\r\n\r\n<table width=\"285\" border=1 align=\"center\">\r\n<tr>\r\n<td
+        \ align=\"center\"><img src=\"logo.gif\" alt=\"Mt. Bachelor\" border=\"0\">\r\n</td>\r\n<td
+        colspan=\"3\">\r\n<a href=\"index.asp\">Track Another Pass</a>\r\n<div class=\"customerContent\"><strong>TURNS
+        FOR: &nbsp; <font face=\"Arial\" size=2>error '80020009'</font>\n<p>\n<font
+        face=\"Arial\" size=2>/mobile/tyt.asp</font><font face=\"Arial\" size=2>,
+        line 285</font> "
+    http_version: 
+  recorded_at: Tue, 03 Dec 2013 02:32:38 GMT
+recorded_with: VCR 2.4.0

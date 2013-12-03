@@ -1,6 +1,6 @@
 = tyt
 
-Description goes here.
+Track Your Turns.  Back in 2001 I wrote a classic ASP web app so skiers at Mt. Bachelor could track their ski runs online.  Twelve years later I'm writing a ruby gem to scrape the data.  Its like rain on a wedding date... a free ride when you've already paid.
 
 == Contributing to tyt
  

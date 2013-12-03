@@ -36,6 +36,27 @@ module Tyt
       return season
     end
 
+    def date_data(date)
+      begin
+        @currentday = date.strftime('%m/%d/%Y')
+        get_doc
+        ride_rows = doc.css('td').select{|n| n.text =~ /\d{1,2}\/\d{2}\/\d{4}\s{1}\d{1,2}\:\d{2}\:\d{2}/ }.collect{|a| a.parent() }
+        ride_data = []
+        ride_rows.each do |row|
+          cells = row.children.css('td')
+          date = cells[0] ? DateTime.strptime(cells[0].text,'%m/%d/%Y %l:%M:%S %p') : nil
+          chair = cells[1] ? cells[1].text : nil
+          vertical_feet = cells[2] ? cells[2].text : nil
+          vertical_meters = cells[3] ? cells[3].text : nil
+          run_detail = Tyt::RunDetail.new(datetime: date, chair: chair, vertical_feet: vertical_feet, vertical_meters: vertical_meters)
+          ride_data << run_detail
+        end
+        return ride_data
+      rescue OpenURI::HTTPError
+        return nil
+      end
+    end
+
     def data_endpoint
       args = [
         "passmediacode=#{@pass}",

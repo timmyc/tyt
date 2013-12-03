@@ -64,4 +64,35 @@ class TestBachelor < Minitest::Test
       assert opening_day.vertical_meters == 312, "vertical_meters expected 312 got #{opening_day.vertical_meters}"
     end
   end
+
+  def test_that_date_data_returns_array
+    @tyt.season = '12-13'
+    date = Date.strptime('04/13/2013', '%m/%d/%Y')
+    VCR.use_cassette('04-13-13_date_page') do
+      date_data = @tyt.date_data(date)
+      assert date_data.instance_of?(Array)
+    end
+  end
+
+  def test_that_date_data_sets_right_data
+    @tyt.season = '12-13'
+    date = Date.strptime('04/13/2013', '%m/%d/%Y')
+    VCR.use_cassette('04-13-13_date_page') do
+      date_data = @tyt.date_data(date)
+      first_run = date_data[0]
+      assert first_run.chair == 'Sunshine'
+      assert first_run.vertical_feet == 257
+      assert first_run.vertical_meters == 78
+      assert first_run.datetime.strftime('%m/%d/%Y %l:%M:%S %p') == '04/13/2013  9:40:05 AM'
+    end
+  end
+
+  def test_that_date_with_no_data_returns_nil
+    @tyt.season = '12-13'
+    date = Date.strptime('04/14/2013', '%m/%d/%Y')
+    VCR.use_cassette('04-14-13_date_page') do
+      date_data = @tyt.date_data(date)
+      assert date_data == nil
+    end
+  end
 end
