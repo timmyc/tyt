@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "tyt"
   gem.homepage = "http://github.com/timmyc/tyt"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = "A wrapper for accessing vertical turn tracking information from ski areas"
+  gem.description = "Track Your Turns (tyt) provides a wrapper to ski area turn tracking data sets"
   gem.email = "timmydcrawford@gmail.com"
   gem.authors = ["Timmy Crawford"]
   # dependencies defined in Gemfile
