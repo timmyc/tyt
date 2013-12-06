@@ -87,6 +87,14 @@ class TestBachelor < Minitest::Test
     end
   end
 
+  def test_that_date_data_supports_one_digit_hours
+    date = Date.strptime('12/05/2013', '%m/%d/%Y')
+    VCR.use_cassette('12-05-13_date_page') do
+      date_data = @tyt.date_data(date)
+      assert date_data.length == 9
+    end
+  end
+
   def test_that_date_with_no_data_returns_nil
     @tyt.season = '12-13'
     date = Date.strptime('04/14/2013', '%m/%d/%Y')

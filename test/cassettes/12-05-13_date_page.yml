@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://track.mtbachelor.com/mobile/tyt.asp?currentday=12/05/2013&passmediacode=MBJ6445733&season=13-14
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 06 Dec 2013 05:43:39 GMT
+      Server:
+      - Microsoft-IIS/6.0
+      X-Powered-By:
+      - ASP.NET
+      Content-Length:
+      - '4177'
+      Content-Type:
+      - text/html
+      Set-Cookie:
+      - ASPSESSIONIDACTRSASA=CLIBIEEAOCGPAJHFNHIAILHN; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: UTF-8
+      string: "\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\"
+        >\r\n\r\n\r\n<html>\r\n<head>\r\n\r\n\t<title>MTB TYT Mobile</title>\r\n  \t<link
+        rel=\"stylesheet\" href=\"main.css\" >\r\n\r\n</head>\r\n\r\n\r\n<script type=\"text/javascript\">\r\nvar
+        gaJsHost = ((\"https:\" == document.location.protocol) ? \"https://ssl.\"
+        : \"http://www.\");\r\ndocument.write(unescape(\"%3Cscript src='\" + gaJsHost
+        + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\"));\r\n</script>\r\n<script
+        type=\"text/javascript\">\r\ntry {\r\nvar pageTracker = _gat._getTracker(\"UA-3857258-2\");\r\npageTracker._trackPageview();\r\n}
+        catch(err) {}</script>\r\n\r\n<body topmargin=\"0\" leftmargin=\"0\" marginwidth=\"0\"
+        marginheight=\"0\">\r\n\r\n\r\n<table width=\"285\" border=1 align=\"center\">\r\n<tr>\r\n<td
+        \ align=\"center\"><img src=\"logo.gif\" alt=\"Mt. Bachelor\" border=\"0\">\r\n</td>\r\n<td
+        colspan=\"3\">\r\n<a href=\"index.asp\">Track Another Pass</a>\r\n<div class=\"customerContent\"><strong>TURNS
+        FOR: &nbsp;TIMOTHYc</strong>\r\n<br />\r\n<b>12/05/2013</b>\r\n</td>\r\n</tr>\r\n\t\r\n\r\n\t\t<tr>\r\n\t\t\t<td><b>Date<br/>Time</b></td>\r\n\t\t\t<td
+        align=center><b>Chair</td>\r\n\t\t\t<td align=right><b>Vert(ft)</b></td>\r\n\t\t\t<td
+        align=right><b>Vert(m)</td>\r\n\t\t</tr>\r\n\t\r\n\t\t\r\n\t\t<tr>\r\n\t\t\t<td>12/5/2013
+        1:28:52 PM</td>\r\n\t\t\t<td align=center>Skyliner</td>\r\n\t\t\t<td align=right>1,306</td>\r\n\t\t\t<td
+        align=right>398</td>\r\n\t\t</tr>\r\n\t\r\n\t\t\r\n\t\t<tr>\r\n\t\t\t<td>12/5/2013
+        1:39:40 PM</td>\r\n\t\t\t<td align=center>Skyliner</td>\r\n\t\t\t<td align=right>1,306</td>\r\n\t\t\t<td
+        align=right>398</td>\r\n\t\t</tr>\r\n\t\r\n\t\t\r\n\t\t<tr>\r\n\t\t\t<td>12/5/2013
+        1:51:11 PM</td>\r\n\t\t\t<td align=center>Skyliner</td>\r\n\t\t\t<td align=right>1,306</td>\r\n\t\t\t<td
+        align=right>398</td>\r\n\t\t</tr>\r\n\t\r\n\t\t\r\n\t\t<tr>\r\n\t\t\t<td>12/5/2013
+        2:01:29 PM</td>\r\n\t\t\t<td align=center>Pine Marten</td>\r\n\t\t\t<td align=right>1,367</td>\r\n\t\t\t<td
+        align=right>416</td>\r\n\t\t</tr>\r\n\t\r\n\t\t\r\n\t\t<tr>\r\n\t\t\t<td>12/5/2013
+        2:10:53 PM</td>\r\n\t\t\t<td align=center>Pine Marten</td>\r\n\t\t\t<td align=right>1,367</td>\r\n\t\t\t<td
+        align=right>416</td>\r\n\t\t</tr>\r\n\t\r\n\t\t\r\n\t\t<tr>\r\n\t\t\t<td>12/5/2013
+        2:20:38 PM</td>\r\n\t\t\t<td align=center>Pine Marten</td>\r\n\t\t\t<td align=right>1,367</td>\r\n\t\t\t<td
+        align=right>416</td>\r\n\t\t</tr>\r\n\t\r\n\t\t\r\n\t\t<tr>\r\n\t\t\t<td>12/5/2013
+        2:32:58 PM</td>\r\n\t\t\t<td align=center>Pine Marten</td>\r\n\t\t\t<td align=right>1,367</td>\r\n\t\t\t<td
+        align=right>416</td>\r\n\t\t</tr>\r\n\t\r\n\t\t\r\n\t\t<tr>\r\n\t\t\t<td>12/5/2013
+        2:42:20 PM</td>\r\n\t\t\t<td align=center>Pine Marten</td>\r\n\t\t\t<td align=right>1,367</td>\r\n\t\t\t<td
+        align=right>416</td>\r\n\t\t</tr>\r\n\t\r\n\t\t\r\n\t\t<tr>\r\n\t\t\t<td>12/5/2013
+        2:52:11 PM</td>\r\n\t\t\t<td align=center>Skyliner</td>\r\n\t\t\t<td align=right>1,306</td>\r\n\t\t\t<td
+        align=right>398</td>\r\n\t\t</tr>\r\n\t\r\n\t\t<tr>\r\n\t\t\t<td><b>TOTAL</b></td>\r\n\t\t\t<td
+        align=\"center\"><b>9</b></td>\r\n\t\t\t<td align=right><b>12,059</b></td>\r\n\t\t\t<td
+        align=right><b>3,672</b></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td colspan=2><b>Day
+        AVG</b></td>\r\n\r\n\t\t\t<td align=right><b>1,340</b></td>\r\n\t\t\t<td align=right><b>408</b></td>\r\n\t\t</tr>\r\n\t</table>\r\n\r\n\r\n<table
+        cellpadding=\"2\" width=\"285\" align=\"center\">\r\n<tr>\r\n<td>\r\n<form>\r\n\t<INPUT
+        TYPE=\"button\" VALUE=\"Back\" onClick=\"history.go(-1);return true;\"> </form>\r\n</td>\r\n</tr>\r\n\t<tr>\r\n\t\t<td>\r\nVIEW
+        OTHER SEASONS:\r\n<br />\r\n<a href=\"tyt.asp?passmediacode=MBJ6445733&season=11-12&currentday=null\">12-13
+        Season</a>\r\n<br />\r\n<br />\r\n<a href=\"tyt.asp?passmediacode=MBJ6445733&season=11-12&currentday=null\">11-12
+        Season</a>\r\n<br />\r\n<br />\r\n<a href=\"tyt.asp?passmediacode=MBJ6445733&season=10-11&currentday=null\">10-11
+        Season</a>\r\n<br />\r\n<br />\r\n<a href=\"tyt.asp?passmediacode=MBJ6445733&season=09-10&currentday=null\">09-10
+        Season</a>\r\n<br />\r\n<br />\r\n<a href=\"tyt.asp?passmediacode=MBJ6445733&season=08-09&currentday=null\">08-09
+        Season</a>\r\n<br />\r\n<br />\r\n<a href=\"tyt.asp?passmediacode=MBJ6445733&season=07-08&currentday=null\">07-08
+        Season</a>\r\n<br />\r\n<br />\r\n<a href=\"tyt.asp?passmediacode=MBJ6445733&season=06-07&currentday=null\">06-07
+        Season</a>\r\n<br />\r\n<br />\r\n<a href=\"tyt.asp?passmediacode=MBJ6445733&season=05-06&currentday=null\">05-06
+        Season</a>\r\n\t\t</td>\r\n\t</tr>\r\n</table>\r\n\r\n\r\n\r\n\r\n\r\n\t\t</td>\r\n\t</tr>\r\n</table>\r\n
+        \           </td>\r\n          </tr>\r\n\t\t </tbody>\r\n\t\t </table>\r\n\r\n<table
+        width=\"285\" align=\"center\">\r\n<tr>\r\n<td>&copy; Copyright 2002 - 2012
+        by Mt. Bachelor. All rights reserved.\r\n</td>\r\n</tr>\r\n</table>\r\n</body>\r\n</html>\r\n\r\n"
+    http_version: 
+  recorded_at: Fri, 06 Dec 2013 05:43:39 GMT
+recorded_with: VCR 2.4.0

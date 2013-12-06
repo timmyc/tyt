@@ -40,7 +40,7 @@ module Tyt
       begin
         @currentday = date.strftime('%m/%d/%Y')
         get_doc
-        ride_rows = doc.css('td').select{|n| n.text =~ /\d{1,2}\/\d{2}\/\d{4}\s{1}\d{1,2}\:\d{2}\:\d{2}/ }.collect{|a| a.parent() }
+        ride_rows = doc.css('td').select{|n| n.text =~ /\d{1,2}\/\d{1,2}\/\d{4}\s{1}\d{1,2}\:\d{2}\:\d{2}/ }.collect{|a| a.parent() }
         ride_data = []
         ride_rows.each do |row|
           cells = row.children.css('td')
